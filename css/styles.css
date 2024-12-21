@@ -621,14 +621,6 @@ align-items: center;
     height: 40px;
     background: #4d5ae5;
     border: none;
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-    background: #31d0aa;
-}
-
-.subscribe-btn-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -636,6 +628,11 @@ align-items: center;
     text-align: center;
     color: #fff;
     padding-right: 16px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background: #31d0aa;
 }
 
 .subscribe-icon {
@@ -860,16 +857,16 @@ align-items: center;
     fill: #4d5ae5;
 }
 
-.textarea-checkbox-wrapper {
-    margin-bottom: 24px;
-}
-
 .textarea-label {
     font-weight: 400;
         font-size: 12px;
         line-height: 1.16667;
         letter-spacing: 0.04em;
         color: #8e8f99;
+}
+
+.client-form-wrapper {
+    margin-bottom: 24px;
 }
 
 .form-comment {
