@@ -619,6 +619,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 165px;
     border-radius: 4px;
     padding: 8px 24px;
     width: 165px;
@@ -679,8 +680,8 @@ align-items: center;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding: 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
     
 }
 
@@ -705,6 +706,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 24px;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -719,7 +721,7 @@ align-items: center;
 }
 
 .modal-close:hover,
-.modal-cloze:focus {
+.modal-close:focus {
     background-color: #404bbf;
     border: none;
 }
@@ -727,6 +729,11 @@ align-items: center;
 .icon-close {
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .icon-close,
+.modal-close:focus .icon-close {
+    fill: #ffffff
 }
 
 .icon-close:hover,
@@ -742,9 +749,8 @@ align-items: center;
 .form-client-label {
     display: block;
     font-weight: 400;
-    line-height: 1.17;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
@@ -765,6 +771,7 @@ align-items: center;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
+    outline: transparent;
 }
 
 .form-client-input:focus {
@@ -920,9 +927,9 @@ align-items: center;
 }
 
 .custom-checkbox {
-display: inline-flex;
-justify-content: center;
-align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -930,6 +937,7 @@ align-items: center;
     cursor: pointer;
     fill: transparent;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox {}
